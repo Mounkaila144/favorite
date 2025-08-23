@@ -48,13 +48,13 @@ export default function Footer() {
               <li>
                 <a href="#massage" className="text-gray-300 hover:text-[var(--favourite-gold)] transition-all duration-300 flex items-center group">
                   <span className="w-2 h-2 bg-[var(--favourite-burgundy)] rounded-full mr-3 group-hover:bg-[var(--favourite-gold)] transition-colors duration-300"></span>
-                  Massages
+                  Beauty
                 </a>
               </li>
               <li>
                 <a href="#massage" className="text-gray-300 hover:text-[var(--favourite-gold)] transition-all duration-300 flex items-center group">
                   <span className="w-2 h-2 bg-[var(--favourite-burgundy)] rounded-full mr-3 group-hover:bg-[var(--favourite-gold)] transition-colors duration-300"></span>
-                  Kinésithérapie
+                  Spa
                 </a>
               </li>
               <li>

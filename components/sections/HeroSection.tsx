@@ -3,11 +3,11 @@
 import { useState, useEffect, useRef } from 'react';
 import { ChevronLeft, ChevronRight, Sparkles, Heart, Star, Award, Users } from 'lucide-react';
 import { Button } from '@/components/ui/button';
+import Image from 'next/image';
 
 const heroImages = [
-  'https://ninamassage.com/cdn/shop/files/1e24e693-988e-446c-a59a-e5eaadbee9f5_1.jpg?v=1746389815&width=3840',
-  'https://ninamassage.com/cdn/shop/files/IMG_0814.jpg?v=1746459466&width=1920',
-  'https://images.pexels.com/photos/3985360/pexels-photo-3985360.jpeg?auto=compress&cs=tinysrgb&w=1920&h=1080&fit=crop'
+  'https://images.pexels.com/photos/3985360/pexels-photo-3985360.jpeg?auto=compress&cs=tinysrgb&w=1920&h=1080&fit=crop',
+  '/image/hero/favouriteteams.png'
 ];
 
 export default function HeroSection() {
@@ -61,9 +61,12 @@ export default function HeroSection() {
   };
 
   return (
-    <section ref={heroRef} id="accueil" className="relative h-screen overflow-hidden pt-14 sm:pt-16 md:pt-18 mb-0">
-      {/* Enhanced Background with Parallax Effect */}
-      <div className="absolute inset-0 favourite-luxury-gradient-radial opacity-30"></div>
+    <section ref={heroRef} id="accueil" className="relative h-screen overflow-hidden pt-36 sm:pt-16 md:pt-18 mb-0">
+      {/* Enhanced Background optimisé pour logo vert #b3dccc */}
+      <div className="absolute inset-0 favourite-luxury-gradient-radial opacity-20"></div>
+      
+      {/* Zone claire spéciale pour le logo */}
+      <div className="absolute top-0 left-0 right-0 h-24 bg-gradient-to-b from-black/10 via-transparent to-transparent"></div>
 
       {/* Floating Particles */}
       <div className="absolute inset-0 overflow-hidden pointer-events-none">
@@ -98,12 +101,15 @@ export default function HeroSection() {
               index === currentSlide ? 'opacity-100' : 'opacity-0'
             }`}
           >
-            <img
+            <Image
               src={image}
-              alt={`Spa ambiance ${index + 1}`}
-              className="w-full h-full object-cover"
+              alt={`Ambiance spa relaxante ${index + 1} - Favourite Beauty Spa Niamey`}
+              fill
+              className="object-cover"
+              priority={index === 0}
+              quality={90}
             />
-            <div className="absolute inset-0 favourite-luxury-overlay" />
+            <div className="absolute inset-0 favourite-strong-overlay" />
           </div>
         ))}
       </div>
@@ -159,25 +165,36 @@ export default function HeroSection() {
             </div>
           </div>
 
-          {/* Main Title with Enhanced Animation */}
+          {/* Main Logo with Enhanced Animation */}
           <div className={`flex items-center justify-center mb-8 transition-all duration-1000 delay-500 ${
             isLoaded ? 'opacity-100 scale-100' : 'opacity-0 scale-95'
           }`}>
-            <Sparkles className="text-[var(--favourite-gold)] mr-4 drop-shadow-lg animate-pulse" size={40} />
-            <h1 className="text-6xl md:text-8xl lg:text-9xl font-playfair font-light luxury-text-shadow bg-gradient-to-r from-white via-[var(--favourite-gold)] to-white bg-clip-text text-transparent animate-gradient-x">
-              favourite
-              <span className="sr-only"> Massage & Kiné - Centre de Massage Professionnel à Niamey, Niger</span>
-            </h1>
-            <Heart className="text-[var(--favourite-gold)] ml-4 drop-shadow-lg animate-pulse" size={40} />
+            <Sparkles className="text-[var(--favourite-gold)] mr-6 drop-shadow-lg animate-pulse luxury-text-glow" size={40} />
+            <div className="favourite-logo-container">
+              <Image
+                src="/image/favourite-spa-logo.png"
+                alt="FAVOURITE BEAUTY SPA - Salon de Coiffure Homme et Centre de Bien-être à Niamey, Niger"
+                width={400}
+                height={200}
+                className="w-80 md:w-96 lg:w-[500px] h-auto drop-shadow-2xl hover:scale-105 transition-all duration-500 filter hover:brightness-110"
+                priority
+              />
+              {/* Effet de brillance animé sur le logo */}
+              <div className="absolute inset-0 bg-gradient-to-r from-transparent via-white/30 to-transparent opacity-0 hover:opacity-100 transition-opacity duration-300 pointer-events-none"
+                   style={{
+                     animation: 'logoShimmer 3s ease-in-out infinite',
+                     animationDelay: '1s'
+                   }}>
+              </div>
+            </div>
+            <Heart className="text-[var(--favourite-gold)] ml-6 drop-shadow-lg animate-pulse luxury-text-glow" size={40} />
+            <span className="sr-only">FAVOURITE BEAUTY SPA - Salon de Coiffure Homme et Centre de Bien-être à Niamey, Niger</span>
           </div>
 
           {/* Subtitle with Elegant Typography */}
           <div className={`mb-8 transition-all duration-1000 delay-700 ${
             isLoaded ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-4'
           }`}>
-            <p className="text-2xl md:text-3xl lg:text-4xl mb-2 font-light tracking-wider text-[var(--favourite-gold)]">
-              Beauty & Spa
-            </p>
             <div className="w-24 h-0.5 bg-gradient-to-r from-transparent via-[var(--favourite-gold)] to-transparent mx-auto"></div>
           </div>
 
@@ -185,10 +202,10 @@ export default function HeroSection() {
           <p className={`text-lg md:text-xl lg:text-2xl mb-12 max-w-3xl mx-auto leading-relaxed opacity-90 font-light transition-all duration-1000 delay-900 ${
             isLoaded ? 'opacity-90 translate-y-0' : 'opacity-0 translate-y-4'
           }`}>
-            Découvrez l'excellence du bien-être avec nos services premium :
-            <span className="text-[var(--favourite-gold)] font-medium"> drainage lymphatique</span>,
-            <span className="text-[var(--favourite-gold)] font-medium"> massage 4 mains</span>,
-            <span className="text-[var(--favourite-gold)] font-medium"> soins esthétiques</span> et bien plus encore.
+            Découvrez l&apos;excellence de la beauté et du bien-être avec nos services premium :
+            <span className="text-[var(--favourite-gold)] font-medium"> coiffure homme professionnelle</span>,
+            <span className="text-[var(--favourite-gold)] font-medium"> massages relaxants</span>,
+            <span className="text-[var(--favourite-gold)] font-medium"> soins de visage et épilation</span>.
           </p>
 
           {/* Stats Section */}
@@ -196,7 +213,7 @@ export default function HeroSection() {
             isLoaded ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-4'
           }`}>
             <div className="text-center">
-              <div className="text-3xl md:text-4xl font-bold text-[var(--favourite-gold)] mb-1">500+</div>
+              <div className="text-3xl md:text-4xl font-bold text-[var(--favourite-gold)] mb-1">1000+</div>
               <div className="text-sm text-white/80 tracking-wide">Clients Satisfaits</div>
             </div>
             <div className="text-center">
@@ -204,8 +221,8 @@ export default function HeroSection() {
               <div className="text-sm text-white/80 tracking-wide">Note Moyenne</div>
             </div>
             <div className="text-center">
-              <div className="text-3xl md:text-4xl font-bold text-[var(--favourite-gold)] mb-1">3+</div>
-              <div className="text-sm text-white/80 tracking-wide">Années d'Expérience</div>
+              <div className="text-3xl md:text-4xl font-bold text-[var(--favourite-gold)] mb-1">5+</div>
+              <div className="text-sm text-white/80 tracking-wide">Années d&apos;Expérience</div>
             </div>
           </div>
 

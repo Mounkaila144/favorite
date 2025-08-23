@@ -7,52 +7,52 @@ import { Badge } from '@/components/ui/badge';
 
 const services = [
   {
-    name: 'Drainage Lymphatique',
-    description: 'Technique spécialisée pour stimuler la circulation lymphatique et éliminer les toxines',
-    duration: '60 min',
-    price: '25,000 CFA',
-    image: 'https://favourite-beauty-spa.com/cdn/shop/files/Designsanstitre.zip-20.png?v=1746389423&width=600',
-    popular: true
-  },
-  {
-    name: 'Massage 4 mains',
-    description: 'Expérience unique avec deux thérapeutes pour une relaxation maximale',
-    duration: '60 min',
-    price: '50,000 CFA',
-    image: 'https://favourite-beauty-spa.com/cdn/shop/files/Untitleddesign_1.png?v=1746389286&width=600',
-    popular: true
-  },
-  {
-    name: 'Pédicure',
-    description: 'Soin complet des pieds avec exfoliation, massage et pose de vernis',
+    name: 'Coiffure VIP Adulte',
+    description: 'Coiffure professionnelle complète pour hommes avec traitement complet',
     duration: '45 min',
-    price: '10,000 CFA',
-    image: 'https://favourite-beauty-spa.com/cdn/shop/files/IMG_0814.jpg?v=1746459466&width=600',
-    popular: false
+    price: '4,000F',
+    image: 'https://images.pexels.com/photos/1319460/pexels-photo-1319460.jpeg?auto=compress&cs=tinysrgb&w=600&h=400&fit=crop',
+    popular: true
   },
   {
-    name: 'Manucure',
-    description: 'Soin des mains avec lime, cuticules et pose de vernis professionnel',
+    name: 'Coiffure Enfants',
+    description: 'Coupe de cheveux adaptée aux enfants dans un environnement accueillant',
     duration: '30 min',
-    price: '8,000 CFA',
-    image: 'https://favourite-beauty-spa.com/cdn/shop/files/Designsanstitre.zip-9.png?v=1746386760&width=600',
+    price: '1,500F',
+    image: 'https://images.pexels.com/photos/5128072/pexels-photo-5128072.jpeg?auto=compress&cs=tinysrgb&w=600&h=400&fit=crop',
     popular: false
   },
   {
-    name: 'Massage Relaxant',
-    description: 'Massage complet du corps aux huiles essentielles pour une détente profonde',
+    name: 'Massage VIP Complet',
+    description: 'Massage VIP avec tout nécessaire et complet (une heure 20mns)',
+    duration: '80 min',
+    price: '60,000F',
+    image: 'https://images.pexels.com/photos/3757952/pexels-photo-3757952.jpeg?auto=compress&cs=tinysrgb&w=600&h=400&fit=crop',
+    popular: true
+  },
+  {
+    name: 'Massage aux Pierres Chaudes',
+    description: 'Massage relaxant avec pierres chaudes pour une détente profonde',
     duration: '60 min',
-    price: '30,000 CFA',
-    image: 'https://images.pexels.com/photos/3997991/pexels-photo-3997991.jpeg?auto=compress&cs=tinysrgb&w=600&h=400&fit=crop',
+    price: '30,000F',
+    image: 'https://images.pexels.com/photos/3755706/pexels-photo-3755706.jpeg?auto=compress&cs=tinysrgb&w=600&h=400&fit=crop',
+    popular: true
+  },
+  {
+    name: 'Épilation Complète du Corps',
+    description: 'Épilation complète du corps à la cire professionnelle',
+    duration: '90 min',
+    price: '30,000F',
+    image: 'https://images.pexels.com/photos/5240655/pexels-photo-5240655.jpeg?auto=compress&cs=tinysrgb&w=600&h=400&fit=crop',
     popular: false
   },
   {
-    name: 'Massage Thérapeutique',
-    description: 'Soulagement des tensions musculaires avec techniques spécialisées',
-    duration: '75 min',
-    price: '35,000 CFA',
-    image: 'https://images.pexels.com/photos/7176319/pexels-photo-7176319.jpeg?auto=compress&cs=tinysrgb&w=600&h=400&fit=crop',
-    popular: false
+    name: 'Soins de Visage Complet',
+    description: 'Soin de visage avec traitement complet du masque (Facial)',
+    duration: '60 min',
+    price: '15,000F',
+    image: 'https://images.pexels.com/photos/3985360/pexels-photo-3985360.jpeg?auto=compress&cs=tinysrgb&w=600&h=400&fit=crop',
+    popular: true
   }
 ];
 
@@ -147,13 +147,13 @@ export default function MassageSection() {
             <span className="text-[var(--favourite-burgundy)] font-medium">Services Premium</span>
           </div>
           <h2 className="text-5xl md:text-6xl font-playfair favourite-burgundy mb-6 luxury-text-glow">
-            favourite <span className="text-[var(--favourite-gold)]">Massage</span>
-            <span className="sr-only"> & Kiné - Centre de Massage Professionnel à Niamey, Niger</span>
+            FAVOURITE <span className="text-[var(--favourite-gold)]">BEAUTY SPA</span>
+            <span className="sr-only"> - Salon de Coiffure Homme et Centre de Bien-être à Niamey, Niger</span>
           </h2>
           <p className="text-xl text-gray-600 max-w-4xl mx-auto leading-relaxed">
-            Découvrez l'art du bien-être dans notre centre d'exception.
-            Nos thérapeutes certifiés vous offrent une expérience unique
-            alliant techniques traditionnelles et innovations modernes.
+            Découvrez l'art de la beauté et du bien-être dans notre salon d'exception.
+            Nos coiffeurs professionnels et thérapeutes certifiés vous offrent des services
+            de coiffure homme, massage, épilation et soins du visage de qualité supérieure.
           </p>
         </div>
 
@@ -272,7 +272,7 @@ export default function MassageSection() {
               </p>
               <div className="flex flex-col sm:flex-row gap-4 justify-center">
                 <a
-                  href="https://wa.me/22781836571"
+                  href="https://wa.me/22785463056"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="inline-block bg-white text-[var(--favourite-burgundy)] px-8 py-3 rounded-lg font-semibold luxury-shadow"
@@ -280,7 +280,7 @@ export default function MassageSection() {
                   WhatsApp
                 </a>
                 <a
-                  href="tel:+22781836571"
+                  href="tel:+22785463056"
                   className="inline-block luxury-backdrop border border-white/30 text-white px-8 py-3 rounded-lg font-semibold"
                 >
                   Appeler Maintenant

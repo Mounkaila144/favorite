@@ -80,7 +80,9 @@
   }
 
   .btn-success {
-    @apply bg-green-600 text-white hover:bg-green-700 focus:ring-green-500;
+    @apply text-white hover:opacity-90 focus:ring-2;
+    background-color: #ed9aa4;
+    focus-ring-color: #ed9aa4;
   }
 
   .btn-danger {
@@ -126,7 +128,8 @@
   }
 
   .badge-success {
-    @apply bg-green-100 text-green-800;
+    background-color: #fdeef0;
+    color: #a32a3b;
   }
 
   .badge-warning {
@@ -151,7 +154,9 @@
   }
 
   .alert-success {
-    @apply bg-green-50 border-green-200 text-green-800;
+    background-color: #fef7f8;
+    border-color: #fbdde1;
+    color: #a32a3b;
   }
 
   .alert-warning {
@@ -327,8 +332,8 @@
     @apply bg-blue-600;
   }
 
-  .progress-bar-green {
-    @apply bg-green-600;
+  .progress-bar-pink {
+    background-color: #ed9aa4;
   }
 
   .progress-bar-yellow {
@@ -467,8 +472,29 @@
 }
 
 :root {
-  --favourite-burgundy: #638b79;
-  --favourite-light-burgundy: #b3dccc;
+  /* Palette rose principale cohérente basée sur #ed9aa4 */
+  --favourite-pink-50: #fef7f8;
+  --favourite-pink-100: #fdeef0;
+  --favourite-pink-200: #fbdde1;
+  --favourite-pink-300: #f7bbc2;
+  --favourite-pink-400: #ed9aa4;
+  --favourite-pink-500: #e47987;
+  --favourite-pink-600: #d85a6b;
+  --favourite-pink-700: #c43e50;
+  --favourite-pink-800: #a32a3b;
+  --favourite-pink-900: #881a28;
+  --favourite-pink-950: #4a0e15;
+  
+  /* Teintes roses spécialisées basées sur #ed9aa4 */
+  --favourite-sage: #ed9aa4;
+  --favourite-sage-light: #f7bbc2;
+  --favourite-sage-dark: #d85a6b;
+  --favourite-forest: #a32a3b;
+  --favourite-mint: #fdeef0;
+  --favourite-emerald: #ed9aa4;
+  --favourite-jade: #e47987;
+  
+  /* Couleurs complémentaires (conservées) */
   --favourite-dark: #1a1a1a;
   --favourite-gray: #f8f8f8;
   --favourite-black: #000000;
@@ -477,6 +503,10 @@
   --favourite-gold-light: #F4E4BC;
   --favourite-rose-gold: #E8B4B8;
   --favourite-platinum: #E5E4E2;
+  
+  /* Compatibilité (anciens noms) - Utilise #ed9aa4 comme base */
+  --favourite-burgundy: #ed9aa4;
+  --favourite-light-burgundy: #fbdde1;
 }
 
 @layer base {
@@ -542,16 +572,74 @@
   background: linear-gradient(45deg, var(--favourite-white) 0%, var(--favourite-burgundy) 50%, var(--favourite-black) 100%);
 }
 
-/* Version premium (lueur + vignette douce) */
+/* Version premium doré et rose - Excellent contraste pour les textes */
+/* Version premium élégante - Meilleur contraste pour les textes */
 .favourite-luxury-overlay{
   background:
-          radial-gradient(120% 100% at 80% 20%,
-          hsl(155 80% 85% / 0.12) 0%, transparent 60%),
+    /* Gradient radial doré-rose en haut */
+          radial-gradient(120% 80% at 50% 0%,
+          rgba(212, 175, 55, 0.25) 0%, rgba(244, 182, 189, 0.20) 40%, transparent 70%),
+            /* Gradient diagonal principal avec tons roses dorés */
           linear-gradient(135deg,
-          hsl(150 45% 30% / 0.94) 0%,
-          hsla(151, 42%, 23%, 0.65) 34%,
-          hsl(165 25% 7%  / 0.92) 100%);
-  backdrop-filter: saturate(1.05) contrast(1.03);
+          rgba(0, 0, 0, 0.35) 0%,
+          rgba(219, 112, 147, 0.55) 25%,
+          rgba(244, 182, 189, 0.45) 50%,
+          rgba(139, 69, 101, 0.75) 100%),
+            /* Vignette pour concentrer l'attention au centre */
+          radial-gradient(circle at center,
+          transparent 20%, rgba(0, 0, 0, 0.25) 80%);
+  backdrop-filter: saturate(1.15) contrast(1.1) brightness(0.95);
+}
+
+/* Overlay forte doré-rose - Maximum de contraste pour le texte */
+.favourite-strong-overlay {
+  background:
+          /* Zone doré-rose claire en haut pour le logo */
+          radial-gradient(120% 60% at 50% 0%,
+          rgba(212, 175, 55, 0.25) 0%, rgba(244, 182, 189, 0.20) 30%, transparent 60%),
+          /* Gradient principal noir avec accents chauds */
+          linear-gradient(135deg,
+          rgba(0, 0, 0, 0.60) 0%,
+          rgba(101, 44, 26, 0.50) 25%,
+          rgba(139, 69, 19, 0.45) 50%,
+          rgba(0, 0, 0, 0.80) 100%),
+          /* Vignette forte pour concentrer */
+          radial-gradient(ellipse at center,
+          rgba(212, 175, 55, 0.05) 0%, rgba(0, 0, 0, 0.50) 75%);
+  backdrop-filter: saturate(1.25) contrast(1.2) brightness(0.85);
+}
+
+/* Overlay moyenne doré-rose - Équilibre parfait */
+.favourite-medium-overlay {
+  background:
+          /* Gradient doré-rose subtil */
+          radial-gradient(120% 70% at 50% 10%,
+          rgba(212, 175, 55, 0.18) 0%, rgba(244, 182, 189, 0.12) 35%, transparent 65%),
+          /* Gradient avec tons chaleureux */
+          linear-gradient(135deg,
+          rgba(0, 0, 0, 0.45) 0%,
+          rgba(101, 44, 26, 0.35) 30%,
+          rgba(139, 69, 19, 0.30) 60%,
+          rgba(0, 0, 0, 0.65) 100%),
+          /* Vignette douce */
+          radial-gradient(circle at center,
+          transparent 35%, rgba(0, 0, 0, 0.25) 90%);
+  backdrop-filter: saturate(1.15) contrast(1.12) brightness(0.9);
+}
+
+/* Overlay légère - Pour garder plus de l'image visible avec #ed9aa4 */
+.favourite-light-overlay {
+  background:
+          radial-gradient(120% 80% at 50% 0%,
+          rgba(237, 154, 164, 0.15) 0%, transparent 65%),
+          linear-gradient(135deg,
+          rgba(0, 0, 0, 0.25) 0%,
+          rgba(237, 154, 164, 0.35) 35%,
+          rgba(228, 121, 135, 0.30) 65%,
+          rgba(163, 42, 59, 0.50) 100%),
+          radial-gradient(circle at center,
+          transparent 40%, rgba(0, 0, 0, 0.15) 90%);
+  backdrop-filter: saturate(1.05) contrast(1.05) brightness(1.0);
 }
 
 
@@ -560,9 +648,51 @@
 .favourite-elegant-bg {
   background: linear-gradient(135deg,
     var(--favourite-white) 0%,
-    rgba(96, 29, 32, 0.05) 25%,
-    rgba(96, 29, 32, 0.1) 50%,
-    var(--favourite-burgundy) 100%);
+    #fef7f8 25%,
+    #fdeef0 50%,
+    #ed9aa4 100%);
+}
+
+/* Nouvelles classes utilitaires doré-rose */
+.favourite-gold-rose-text {
+  background: linear-gradient(135deg, #d4af37 0%, #f4b6bd 50%, #ffd700 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.favourite-gold-rose-gradient {
+  background: linear-gradient(135deg, 
+    #d4af37 0%, 
+    #ffd700 25%, 
+    #f4b6bd 50%, 
+    #ffd700 75%, 
+    #d4af37 100%);
+  box-shadow: 
+    0 4px 15px rgba(212, 175, 55, 0.3),
+    0 2px 8px rgba(244, 182, 189, 0.2);
+}
+
+.favourite-rose-gold-gradient {
+  background: linear-gradient(135deg, 
+    #f4b6bd 0%, 
+    #d4af37 50%, 
+    #f4b6bd 100%);
+}
+
+.favourite-luxury-gold-border {
+  border: 2px solid transparent;
+  background: linear-gradient(135deg, #d4af37, #f4b6bd, #ffd700) border-box;
+  -webkit-mask: linear-gradient(#fff 0 0) padding-box, linear-gradient(#fff 0 0);
+  -webkit-mask-composite: exclude;
+}
+
+.favourite-gold-glow {
+  color: #ffd700;
+  text-shadow:
+    0 0 10px rgba(255, 215, 0, 0.8),
+    0 0 20px rgba(212, 175, 55, 0.6),
+    0 0 30px rgba(244, 182, 189, 0.4);
 }
 
 .animate-fade-in {
@@ -995,12 +1125,118 @@
   box-shadow: 0 20px 40px rgba(0, 0, 0, 0.2);
 }
 
-/* Luxury Text Effects */
+/* Luxury Text Effects - Doré éclatant */
 .luxury-text-glow {
   text-shadow:
-    0 0 10px rgba(212, 175, 55, 0.5),
-    0 0 20px rgba(212, 175, 55, 0.3),
-    0 0 30px rgba(212, 175, 55, 0.1);
+    0 0 10px rgba(212, 175, 55, 0.8),
+    0 0 20px rgba(212, 175, 55, 0.6),
+    0 0 30px rgba(212, 175, 55, 0.4),
+    0 0 40px rgba(212, 175, 55, 0.2);
+}
+
+/* Effet spécial doré-rose pour le texte "favourite" */
+.favourite-text-gold {
+  background: linear-gradient(135deg, 
+    #d4af37 0%, 
+    #ffd700 20%, 
+    #ffed4e 40%, 
+    #f4b6bd 60%,
+    #ffd700 80%, 
+    #d4af37 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  text-shadow: 
+    0 0 25px rgba(212, 175, 55, 1.0),
+    0 0 50px rgba(244, 182, 189, 0.6),
+    0 4px 12px rgba(0, 0, 0, 0.5);
+  filter: drop-shadow(0 0 15px rgba(212, 175, 55, 0.8))
+          drop-shadow(0 0 25px rgba(244, 182, 189, 0.4));
+}
+
+/* Animation pour le texte doré-rose éclatant */
+.favourite-text-gold-animate {
+  background: linear-gradient(135deg, 
+    #d4af37 0%, 
+    #ffd700 15%, 
+    #ffed4e 30%, 
+    #f4b6bd 50%,
+    #ffed4e 70%, 
+    #ffd700 85%, 
+    #d4af37 100%);
+  background-size: 400% 400%;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  animation: goldRoseShimmer 4s ease-in-out infinite;
+  text-shadow: 
+    0 0 35px rgba(212, 175, 55, 1.2),
+    0 0 70px rgba(244, 182, 189, 0.8),
+    0 0 100px rgba(255, 215, 0, 0.4);
+  filter: drop-shadow(0 0 20px rgba(212, 175, 55, 1.0))
+          drop-shadow(0 0 35px rgba(244, 182, 189, 0.6))
+          drop-shadow(0 4px 8px rgba(0, 0, 0, 0.3));
+}
+
+/* Animation doré-rose améliorée */
+@keyframes goldRoseShimmer {
+  0% { background-position: 0% 50%; }
+  25% { background-position: 100% 25%; }
+  50% { background-position: 0% 75%; }
+  75% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+
+@keyframes goldShimmer {
+  0%, 100% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+}
+
+/* Styles spéciaux pour le logo */
+.favourite-logo-container {
+  position: relative;
+  display: inline-block;
+}
+
+.favourite-logo-container::before {
+  content: '';
+  position: absolute;
+  top: -15px;
+  left: -15px;
+  right: -15px;
+  bottom: -15px;
+  background: radial-gradient(ellipse at center, 
+    rgba(212, 175, 55, 0.4) 0%, 
+    rgba(244, 182, 189, 0.3) 40%, 
+    rgba(255, 215, 0, 0.2) 70%,
+    transparent 85%);
+  border-radius: 50%;
+  opacity: 0;
+  transition: opacity 0.5s ease;
+  animation: logoGlow 5s ease-in-out infinite;
+}
+
+.favourite-logo-container:hover::before {
+  opacity: 1;
+}
+
+@keyframes logoGlow {
+  0%, 100% { 
+    transform: scale(1); 
+    opacity: 0.4; 
+    filter: blur(1px);
+  }
+  50% { 
+    transform: scale(1.15); 
+    opacity: 0.8; 
+    filter: blur(0px);
+  }
+}
+
+/* Animation de shimmer pour le logo */
+@keyframes logoShimmer {
+  0% { transform: translateX(-100%); }
+  100% { transform: translateX(100%); }
 }
 
 /* Responsive Animations */
@@ -1151,7 +1387,9 @@ a:focus-visible,
   }
 
   .admin-toast-success {
-    @apply bg-green-900/50 border-green-700 backdrop-blur-sm;
+    background-color: rgba(136, 26, 40, 0.5);
+    border-color: #c43e50;
+    backdrop-filter: blur(4px);
   }
 
   .admin-toast-error {

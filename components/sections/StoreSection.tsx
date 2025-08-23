@@ -6,57 +6,57 @@ import { Badge } from '@/components/ui/badge';
 
 const categories = [
   {
+    name: 'Coiffure Homme',
+    description: 'Coiffure VIP adulte et enfants, baïbage professionnel des cheveux',
+    products: '2 services',
+    image: 'https://images.pexels.com/photos/1319460/pexels-photo-1319460.jpeg?auto=compress&cs=tinysrgb&w=600&h=400&fit=crop'
+  },
+  {
     name: 'Massages',
-    description: 'Drainage lymphatique, massage 4 mains et techniques spécialisées',
-    products: '6+ services',
-    image: 'https://favourite-beauty-spa.com/cdn/shop/files/Designsanstitre.zip-20.png?v=1746389423&width=600'
+    description: 'Massage relaxant, tonique, pierres chaudes et massage VIP complet',
+    products: '5 services',
+    image: 'https://images.pexels.com/photos/3757952/pexels-photo-3757952.jpeg?auto=compress&cs=tinysrgb&w=600&h=400&fit=crop'
   },
   {
-    name: 'Soins Esthétiques',
-    description: 'Pédicure, manucure et soins de beauté professionnels',
-    products: '4+ services',
-    image: 'https://favourite-beauty-spa.com/cdn/shop/files/IMG_0814.jpg?v=1746459466&width=600'
-  },
-  {
-    name: 'Soins Personnalisés',
-    description: 'Services sur mesure selon vos besoins spécifiques',
-    products: 'Sur demande',
-    image: 'https://favourite-beauty-spa.com/cdn/shop/files/Untitleddesign_1.png?v=1746389286&width=600'
+    name: 'Soins & Épilation',
+    description: 'Soins de visage, épilation, pédicure et manucure professionnels',
+    products: '6 services',
+    image: 'https://images.pexels.com/photos/3985360/pexels-photo-3985360.jpeg?auto=compress&cs=tinysrgb&w=600&h=400&fit=crop'
   }
 ];
 
 const featuredProducts = [
   {
-    name: 'Drainage Lymphatique',
-    brand: 'favourite Massage',
-    price: '25,000 CFA',
+    name: 'Coiffure VIP Adulte',
+    brand: 'FAVOURITE BEAUTY SPA',
+    price: '4,000F',
     originalPrice: null,
-    image: 'https://favourite-beauty-spa.com/cdn/shop/files/Designsanstitre.zip-20.png?v=1746389423&width=400',
+    image: 'https://images.pexels.com/photos/1319460/pexels-photo-1319460.jpeg?auto=compress&cs=tinysrgb&w=400&h=400&fit=crop',
     badge: 'Populaire'
   },
   {
-    name: 'Massage 4 mains',
-    brand: 'favourite Massage',
-    price: '50,000 CFA',
+    name: 'Massage VIP Complet',
+    brand: 'FAVOURITE BEAUTY SPA',
+    price: '60,000F',
     originalPrice: null,
-    image: 'https://favourite-beauty-spa.com/cdn/shop/files/Untitleddesign_1.png?v=1746389286&width=400',
+    image: 'https://images.pexels.com/photos/3757952/pexels-photo-3757952.jpeg?auto=compress&cs=tinysrgb&w=400&h=400&fit=crop',
     badge: 'Premium'
   },
   {
-    name: 'Pédicure Complète',
-    brand: 'favourite Massage',
-    price: '10,000 CFA',
+    name: 'Massage aux Pierres Chaudes',
+    brand: 'FAVOURITE BEAUTY SPA',
+    price: '30,000F',
     originalPrice: null,
-    image: 'https://favourite-beauty-spa.com/cdn/shop/files/IMG_0814.jpg?v=1746459466&width=400',
-    badge: 'Nouveau'
+    image: 'https://images.pexels.com/photos/3755706/pexels-photo-3755706.jpeg?auto=compress&cs=tinysrgb&w=400&h=400&fit=crop',
+    badge: 'Populaire'
   },
   {
-    name: 'Manucure Professionnelle',
-    brand: 'favourite Massage',
-    price: '8,000 CFA',
+    name: 'Soins de Visage Complet',
+    brand: 'FAVOURITE BEAUTY SPA',
+    price: '15,000F',
     originalPrice: null,
-    image: 'https://favourite-beauty-spa.com/cdn/shop/files/Designsanstitre.zip-9.png?v=1746386760&width=400',
-    badge: 'Classique'
+    image: 'https://images.pexels.com/photos/3985360/pexels-photo-3985360.jpeg?auto=compress&cs=tinysrgb&w=400&h=400&fit=crop',
+    badge: 'Nouveau'
   }
 ];
 
@@ -201,7 +201,7 @@ export default function StoreSection() {
               </p>
               <div className="flex flex-col sm:flex-row gap-4 justify-center">
                 <a
-                  href="https://wa.me/22781836571"
+                  href="https://wa.me/22785463056"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="inline-block bg-white text-[var(--favourite-burgundy)] px-8 py-3 rounded-lg font-semibold luxury-shadow"

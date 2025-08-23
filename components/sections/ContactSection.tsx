@@ -46,20 +46,20 @@ export default function ContactSection() {
     {
       icon: MapPin,
       title: 'Adresse',
-      content: ['Quartier Recasement', '3ème latérite, plaque Adouwal Adamou', 'Niamey, Niger'],
+      content: ['Bobiel Ecole', 'Bakalleyezé Gawado', 'Niamey, Niger'],
       link: 'https://maps.google.com'
     },
     {
       icon: Phone,
       title: 'Téléphone',
-      content: ['+227 81 83 65 71'],
-      link: 'tel:+22781836571'
+      content: ['+227 85 46 30 56', '+227 80 66 29 25'],
+      link: 'tel:+22785463056'
     },
     {
       icon: Mail,
       title: 'Email',
-      content: ['contact@favourite-beauty-spa.com'],
-      link: 'mailto:contact@favourite-beauty-spa.com'
+      content: ['contact@favouritebeautyspa.com'],
+      link: 'mailto:contact@favouritebeautyspa.com'
     },
     {
       icon: Clock,
@@ -70,13 +70,17 @@ export default function ContactSection() {
   ];
 
   const services = [
-    'Drainage Lymphatique',
-    'Massage 4 mains',
-    'Pédicure',
-    'Manucure',
-    'Massage Relaxant',
-    'Massage Thérapeutique',
-    'Consultation Personnalisée'
+    'Coiffure VIP Adulte - 4,000F',
+    'Coiffure Enfants - 1,500F',
+    'Massage VIP Complet - 60,000F',
+    'Massage aux Pierres Chaudes - 30,000F',
+    'Massage Relaxant - 15,000F',
+    'Épilation Complète du Corps - 30,000F',
+    'Soins de Visage - 15,000F',
+    'Pédicure Homme - 9,000F',
+    'Pédicure Femme - 8,000F',
+    'Manucure Homme - 3,000F',
+    'Manucure Femme - 2,500F'
   ];
 
   const timeSlots = [
@@ -152,7 +156,7 @@ export default function ContactSection() {
                 <div className="text-center text-gray-600">
                   <MapPin size={48} className="mx-auto mb-2 text-[var(--favourite-burgundy)]" />
                   <p className="font-medium">Carte interactive</p>
-                  <p className="text-sm">Quartier Recasement 3ème latérite, plaque Adouwal Adamou</p>
+                  <p className="text-sm">Bobiel Ecole, Bakalleyezé Gawado</p>
                   <p className="text-sm">Niamey, Niger</p>
                 </div>
               </div>
