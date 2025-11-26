@@ -47,12 +47,12 @@ export default function ContactSection() {
       icon: MapPin,
       title: 'Adresse',
       content: ['Bobiel Ecole', 'Bakalleyezé Gawado', 'Niamey, Niger'],
-      link: 'https://maps.google.com'
+      link: 'https://maps.google.com/?q=13.5568389892578,2.08305740356445'
     },
     {
       icon: Phone,
       title: 'Téléphone',
-      content: ['+227 85 46 30 56', '+227 80 66 29 25'],
+      content: ['+227 85 46 30 56', ''],
       link: 'tel:+22785463056'
     },
     {
@@ -222,7 +222,7 @@ export default function ContactSection() {
                         type="tel"
                         value={formData.phone}
                         onChange={(e) => handleInputChange('phone', e.target.value)}
-                        placeholder="+33 1 23 45 67 89"
+                        placeholder="+227 85 46 30 56"
                         className="border-gray-300 focus:border-[var(--favourite-burgundy)] focus:ring-[var(--favourite-burgundy)]"
                       />
                     </div>

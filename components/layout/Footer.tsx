@@ -87,8 +87,8 @@ export default function Footer() {
                   <MapPin size={14} className="text-[var(--favourite-burgundy)]" />
                 </div>
                 <div className="text-gray-300 leading-relaxed">
-                  <div>Quartier Recasement</div>
-                  <div>3ème latérite, plaque Adouwal Adamou</div>
+                  <div>Bobiel Ecole</div>
+                  <div>Bakalleyezé Gawado</div>
                   <div>Niamey, Niger</div>
                 </div>
               </div>

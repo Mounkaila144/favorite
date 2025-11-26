@@ -43,8 +43,8 @@ export default function Home() {
     },
     geo: {
       '@type': 'GeoCoordinates',
-      latitude: 13.5116,
-      longitude: 2.1254
+      latitude: 13.5568389892578,
+      longitude: 2.08305740356445
     },
     openingHours: [
       'Mo-Fr 08:00-18:00',
@@ -56,7 +56,7 @@ export default function Home() {
     ],
     sameAs: [
       'https://wa.me/22785463056',
-      'https://wa.me/22780662925'
+      ''
     ],
     hasOfferCatalog: {
       '@type': 'OfferCatalog',
@@ -113,7 +113,7 @@ export default function Home() {
       {/* SEO Content Hidden */}
       <div className="sr-only">
         <h1>FAVOURITE BEAUTY SPA - Salon de Coiffure Homme et Centre de Bien-être à Niamey, Niger</h1>
-        <p>FAVOURITE BEAUTY SPA est votre salon de coiffure homme professionnel et centre de bien-être de référence à Niamey, Niger. Nous proposons des services de coiffure professionnelle, massage relaxant et thérapeutique, épilation complète, soins de visage, pédicure et manucure. Situé à Bobiel Ecole, Bakalleyezé Gawado, notre salon offre des soins de qualité dans un environnement moderne. Contactez-nous au +227 85 46 30 56 ou +227 80 66 29 25 pour réserver.</p>
+        <p>FAVOURITE BEAUTY SPA est votre salon de coiffure homme professionnel et centre de bien-être de référence à Niamey, Niger. Nous proposons des services de coiffure professionnelle, massage relaxant et thérapeutique, épilation complète, soins de visage, pédicure et manucure. Situé à Bobiel Ecole, Bakalleyezé Gawado, notre salon offre des soins de qualité dans un environnement moderne. Contactez-nous au +227 85 46 30 56 pour réserver.</p>
         <h2>Services FAVOURITE BEAUTY SPA à Niamey</h2>
         <ul>
           <li>Coiffure VIP adulte homme à Niamey - 4 000F</li>

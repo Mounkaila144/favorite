@@ -9,13 +9,13 @@ const categories = [
     name: 'Coiffure Homme',
     description: 'Coiffure VIP adulte et enfants, baïbage professionnel des cheveux',
     products: '2 services',
-    image: 'https://images.pexels.com/photos/1319460/pexels-photo-1319460.jpeg?auto=compress&cs=tinysrgb&w=600&h=400&fit=crop'
+    image: '/image/massage/coiffure.png'
   },
   {
     name: 'Massages',
     description: 'Massage relaxant, tonique, pierres chaudes et massage VIP complet',
     products: '5 services',
-    image: 'https://images.pexels.com/photos/3757952/pexels-photo-3757952.jpeg?auto=compress&cs=tinysrgb&w=600&h=400&fit=crop'
+    image: '/image/massage/massage vip.png'
   },
   {
     name: 'Soins & Épilation',
@@ -31,7 +31,7 @@ const featuredProducts = [
     brand: 'FAVOURITE BEAUTY SPA',
     price: '4,000F',
     originalPrice: null,
-    image: 'https://images.pexels.com/photos/1319460/pexels-photo-1319460.jpeg?auto=compress&cs=tinysrgb&w=400&h=400&fit=crop',
+    image: '/image/massage/coiffure.png',
     badge: 'Populaire'
   },
   {
@@ -39,7 +39,7 @@ const featuredProducts = [
     brand: 'FAVOURITE BEAUTY SPA',
     price: '60,000F',
     originalPrice: null,
-    image: 'https://images.pexels.com/photos/3757952/pexels-photo-3757952.jpeg?auto=compress&cs=tinysrgb&w=400&h=400&fit=crop',
+    image: '/image/massage/massage vip.png',
     badge: 'Premium'
   },
   {
@@ -47,7 +47,7 @@ const featuredProducts = [
     brand: 'FAVOURITE BEAUTY SPA',
     price: '30,000F',
     originalPrice: null,
-    image: 'https://images.pexels.com/photos/3755706/pexels-photo-3755706.jpeg?auto=compress&cs=tinysrgb&w=400&h=400&fit=crop',
+    image: '/image/massage/massage piere chaud .png',
     badge: 'Populaire'
   },
   {

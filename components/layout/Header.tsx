@@ -220,16 +220,18 @@ export default function Header({ variant = 'default' }: HeaderProps = {}) {
                 </span>
                 <div className="absolute inset-0 bg-green-500/20 opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
               </a>
-              <Button
-                onClick={() => scrollToSection('contact')}
-                className="group bg-gradient-to-r from-[#e47987] to-[#d85a6b] hover:from-[#d85a6b] hover:to-[#c43e50] text-white hover:opacity-90 transition-all duration-500 px-4 py-2 rounded-full font-semibold hover:scale-105 luxury-shadow relative overflow-hidden"
+              <a
+                href="https://wa.me/22785463056"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="group bg-gradient-to-r from-[#e47987] to-[#d85a6b] hover:from-[#d85a6b] hover:to-[#c43e50] text-white hover:opacity-90 transition-all duration-500 px-4 py-2 rounded-full font-semibold hover:scale-105 luxury-shadow relative overflow-hidden inline-flex items-center"
               >
                 <span className="relative z-10 flex items-center space-x-2">
-                  <Phone className="w-4 h-4 group-hover:animate-pulse" />
+                  <MessageCircle className="w-4 h-4 group-hover:animate-pulse" />
                   <span className="hidden sm:inline">Réserver</span>
                 </span>
                 <div className="absolute inset-0 bg-gradient-to-r from-[#f7bbc2]/30 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
-              </Button>
+              </a>
             </div>
           </nav>
 
@@ -299,12 +301,15 @@ export default function Header({ variant = 'default' }: HeaderProps = {}) {
                   <MessageCircle size={18} />
                   <span>WhatsApp</span>
                 </a>
-                <Button
-                  onClick={() => scrollToSection('contact')}
-                  className="bg-gradient-to-r from-[#e47987] to-[#d85a6b] hover:from-[#d85a6b] hover:to-[#c43e50] text-white w-full py-3 rounded-lg font-semibold luxury-shadow transition-all duration-300"
+                <a
+                  href="https://wa.me/22785463056"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="bg-gradient-to-r from-[#e47987] to-[#d85a6b] hover:from-[#d85a6b] hover:to-[#c43e50] text-white w-full py-3 rounded-lg font-semibold luxury-shadow transition-all duration-300 flex items-center justify-center space-x-2"
                 >
-                  Réserver Maintenant
-                </Button>
+                  <MessageCircle size={18} />
+                  <span>Réserver Maintenant</span>
+                </a>
               </div>
             </nav>
           </div>

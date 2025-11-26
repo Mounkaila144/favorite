@@ -64,8 +64,8 @@ export const metadata: Metadata = {
   other: {
     'geo.region': 'NE-8',
     'geo.placename': 'Niamey',
-    'geo.position': '13.5116;2.1254',
-    'ICBM': '13.5116, 2.1254'
+    'geo.position': '13.5568389892578;2.08305740356445',
+    'ICBM': '13.5568389892578, 2.08305740356445'
   }
 };
 
@@ -79,8 +79,8 @@ export default function RootLayout({
       <head>
         <meta name="geo.region" content="NE-8" />
         <meta name="geo.placename" content="Niamey" />
-        <meta name="geo.position" content="13.5116;2.1254" />
-        <meta name="ICBM" content="13.5116, 2.1254" />
+        <meta name="geo.position" content="13.5568389892578;2.08305740356445" />
+        <meta name="ICBM" content="13.5568389892578, 2.08305740356445" />
         <meta name="theme-color" content="#8B1538" />
         <meta name="msapplication-TileColor" content="#8B1538" />
         <meta name="apple-mobile-web-app-capable" content="yes" />

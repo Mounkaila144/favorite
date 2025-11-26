@@ -12,7 +12,7 @@ const services = [
     description: 'Massage complet du corps aux huiles essentielles pour une détente profonde. Techniques douces et apaisantes pour libérer les tensions du quotidien.',
     duration: '60 min',
     price: '85€',
-    image: 'https://images.pexels.com/photos/3997991/pexels-photo-3997991.jpeg?auto=compress&cs=tinysrgb&w=600&h=400&fit=crop',
+    image: '/image/massage/relaxant.png',
     popular: false,
     benefits: ['Réduction du stress', 'Amélioration du sommeil', 'Détente musculaire']
   },
@@ -21,7 +21,7 @@ const services = [
     description: 'Soulagement des tensions musculaires avec techniques spécialisées. Idéal pour les douleurs chroniques et la récupération sportive.',
     duration: '75 min',
     price: '95€',
-    image: 'https://images.pexels.com/photos/7176319/pexels-photo-7176319.jpeg?auto=compress&cs=tinysrgb&w=600&h=400&fit=crop',
+    image: '/image/massage/thai.png',
     popular: true,
     benefits: ['Soulagement des douleurs', 'Amélioration de la mobilité', 'Récupération musculaire']
   },
@@ -30,7 +30,7 @@ const services = [
     description: 'Nettoyage, exfoliation et hydratation avec produits de luxe. Traitement personnalisé selon votre type de peau.',
     duration: '90 min',
     price: '110€',
-    image: 'https://images.pexels.com/photos/3985360/pexels-photo-3985360.jpeg?auto=compress&cs=tinysrgb&w=600&h=400&fit=crop',
+    image: '/image/massage/infra-rouge.png',
     popular: false,
     benefits: ['Peau éclatante', 'Anti-âge', 'Hydratation profonde']
   },
@@ -39,7 +39,7 @@ const services = [
     description: 'Épilation professionnelle à la cire chaude, toutes zones. Techniques expertes pour un résultat durable et confortable.',
     duration: '45 min',
     price: '65€',
-    image: 'https://images.pexels.com/photos/3985363/pexels-photo-3985363.jpeg?auto=compress&cs=tinysrgb&w=600&h=400&fit=crop',
+    image: '/image/massage/epillation.png',
     popular: false,
     benefits: ['Résultat durable', 'Peau douce', 'Technique professionnelle']
   },
@@ -48,7 +48,7 @@ const services = [
     description: 'Massage + soin du visage + épilation pour une expérience totale de bien-être. Notre forfait le plus complet.',
     duration: '3h',
     price: '220€',
-    image: 'https://images.pexels.com/photos/6621496/pexels-photo-6621496.jpeg?auto=compress&cs=tinysrgb&w=600&h=400&fit=crop',
+    image: '/image/massage/massage vip.png',
     popular: true,
     benefits: ['Expérience complète', 'Économie de 40€', 'Journée détente']
   },
@@ -57,7 +57,7 @@ const services = [
     description: 'Séance de massage simultanée dans notre suite privée. Moment privilégié à partager à deux.',
     duration: '60 min',
     price: '160€',
-    image: 'https://images.pexels.com/photos/3985331/pexels-photo-3985331.jpeg?auto=compress&cs=tinysrgb&w=600&h=400&fit=crop',
+    image: '/image/massage/duo.png',
     popular: false,
     benefits: ['Moment à deux', 'Suite privée', 'Ambiance romantique']
   }
@@ -95,7 +95,7 @@ export default function MassagePage() {
       <section className="relative h-[60vh] overflow-hidden mt-20">
         <div className="absolute inset-0">
           <img
-            src="https://images.pexels.com/photos/3997993/pexels-photo-3997993.jpeg?auto=compress&cs=tinysrgb&w=1920&h=1080&fit=crop"
+            src="/image/massage/massage piere chaud .png"
             alt="favourite Massage - Centre esthétique"
             className="w-full h-full object-cover"
           />

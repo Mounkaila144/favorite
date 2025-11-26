@@ -11,7 +11,7 @@ const services = [
     description: 'Coiffure professionnelle complète pour hommes avec traitement complet',
     duration: '45 min',
     price: '4,000F',
-    image: 'https://images.pexels.com/photos/1319460/pexels-photo-1319460.jpeg?auto=compress&cs=tinysrgb&w=600&h=400&fit=crop',
+    image: '/image/massage/coiffure.png',
     popular: true
   },
   {
@@ -19,7 +19,7 @@ const services = [
     description: 'Coupe de cheveux adaptée aux enfants dans un environnement accueillant',
     duration: '30 min',
     price: '1,500F',
-    image: 'https://images.pexels.com/photos/5128072/pexels-photo-5128072.jpeg?auto=compress&cs=tinysrgb&w=600&h=400&fit=crop',
+    image: '/image/massage/coiffure enfant.png',
     popular: false
   },
   {
@@ -27,7 +27,7 @@ const services = [
     description: 'Massage VIP avec tout nécessaire et complet (une heure 20mns)',
     duration: '80 min',
     price: '60,000F',
-    image: 'https://images.pexels.com/photos/3757952/pexels-photo-3757952.jpeg?auto=compress&cs=tinysrgb&w=600&h=400&fit=crop',
+    image: '/image/massage/massage vip.png',
     popular: true
   },
   {
@@ -35,7 +35,7 @@ const services = [
     description: 'Massage relaxant avec pierres chaudes pour une détente profonde',
     duration: '60 min',
     price: '30,000F',
-    image: 'https://images.pexels.com/photos/3755706/pexels-photo-3755706.jpeg?auto=compress&cs=tinysrgb&w=600&h=400&fit=crop',
+    image: '/image/massage/massage piere chaud .png',
     popular: true
   },
   {
@@ -43,7 +43,7 @@ const services = [
     description: 'Épilation complète du corps à la cire professionnelle',
     duration: '90 min',
     price: '30,000F',
-    image: 'https://images.pexels.com/photos/5240655/pexels-photo-5240655.jpeg?auto=compress&cs=tinysrgb&w=600&h=400&fit=crop',
+    image: '/image/massage/epillation.png',
     popular: false
   },
   {

@@ -10,7 +10,7 @@
   "description": "Centre de massage professionnel et kinésithérapie à Niamey, Niger. Services de massage thérapeutique, épilation, drainage lymphatique, soins esthétiques.",
   "address": {
     "@type": "PostalAddress",
-    "streetAddress": "Quartier Recasement, 3ème latérite, plaque Adouwal Adamou",
+    "streetAddress": "Bobiel Ecole, Bakalleyezé Gawado",
     "addressLocality": "Niamey",
     "addressRegion": "Niamey",
     "postalCode": "",
@@ -18,8 +18,8 @@
   },
   "geo": {
     "@type": "GeoCoordinates",
-    "latitude": 13.5116,
-    "longitude": 2.1254
+    "latitude": 13.5568389892578,
+    "longitude": 2.08305740356445
   },
   "url": "https://favourite-beauty-spa.com",
   "telephone": "+22781836571",
@@ -43,8 +43,8 @@
     "@type": "GeoCircle",
     "geoMidpoint": {
       "@type": "GeoCoordinates",
-      "latitude": 13.5116,
-      "longitude": 2.1254
+      "latitude": 13.5568389892578,
+      "longitude": 2.08305740356445
     },
     "geoRadius": "50000"
   },
